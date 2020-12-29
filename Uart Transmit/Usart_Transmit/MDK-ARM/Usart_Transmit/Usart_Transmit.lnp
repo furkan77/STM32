@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"usart_transmit\startup_stm32f411xe.o"
+"usart_transmit\main.o"
+"usart_transmit\stm32f4xx_it.o"
+"usart_transmit\stm32f4xx_hal_msp.o"
+"usart_transmit\stm32f4xx_hal_tim.o"
+"usart_transmit\stm32f4xx_hal_tim_ex.o"
+"usart_transmit\stm32f4xx_hal_uart.o"
+"usart_transmit\stm32f4xx_hal_rcc.o"
+"usart_transmit\stm32f4xx_hal_rcc_ex.o"
+"usart_transmit\stm32f4xx_hal_flash.o"
+"usart_transmit\stm32f4xx_hal_flash_ex.o"
+"usart_transmit\stm32f4xx_hal_flash_ramfunc.o"
+"usart_transmit\stm32f4xx_hal_gpio.o"
+"usart_transmit\stm32f4xx_hal_dma_ex.o"
+"usart_transmit\stm32f4xx_hal_dma.o"
+"usart_transmit\stm32f4xx_hal_pwr.o"
+"usart_transmit\stm32f4xx_hal_pwr_ex.o"
+"usart_transmit\stm32f4xx_hal_cortex.o"
+"usart_transmit\stm32f4xx_hal.o"
+"usart_transmit\stm32f4xx_hal_exti.o"
+"usart_transmit\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "Usart_Transmit\Usart_Transmit.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Usart_Transmit.map" -o Usart_Transmit\Usart_Transmit.axf
